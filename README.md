@@ -1,5 +1,4 @@
 # Metric convertions
-____________________________
 
 Some distance convertions.
 
@@ -57,7 +56,7 @@ localhost:9292/metrics/linear/:orig_type/:value/:dest_type'
  * yard
  * mile
 
- This should return a json containing the convertion.
+ This should return a json containing the right convertion.
 
- ____________________________
+
 

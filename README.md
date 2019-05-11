@@ -38,9 +38,11 @@ $ rake
 ```
 ____________________________
 
-## Restful
+## Convertions
 
-Once the aplication is running localy you can make requests to convertions on
+Once the aplication is running localy you can make two kinds of convertions: linear and temperature
+
+### Linear
 
 ```
 localhost:9292/metrics/linear/:orig_type/:value/:dest_type'
@@ -56,7 +58,20 @@ localhost:9292/metrics/linear/:orig_type/:value/:dest_type'
  * yard
  * mile
 
- This should return a json containing the right convertion.
+ ### Temperature
+
+```
+localhost:9292/metrics/temperature/:orig_type/:value/:dest_type'
+```
+
+```:value``` should receive number while ```:orig_type``` and ```:dest_type``` accept convertions from and to:
+
+ * c (Celsius)
+ * f (Fahrenheit)
+ * k (Kelvin)
+
+
+ Those calls return a json containing the right convertion.
 
 
 
